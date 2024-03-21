@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the entire container */
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%; /* Ensure text spans the full width */
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .hero-container {
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+}
+
+/* Additional styling to remove margin/padding between sections */
+
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #f0f0f0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    width: 45%; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .footer-section {
+        width: 100%;
+    }
+}
+
+section {
+    padding: 20px; /* Add padding around the section */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the cards horizontally */
+    align-items: flex-start; /* Align items at the start (top) */
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+.category-heading {
+    width: 100%; /* Make the heading take full width */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add space between heading and cards */
+}
